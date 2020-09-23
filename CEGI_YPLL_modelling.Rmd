@@ -1,0 +1,43 @@
+---
+title: "CGEI_YPLL"
+author: "Labib SM"
+date: "July 21, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r cars}
+library(MASS)
+library(sf)
+library(spdep)
+library(spatialreg)
+library(ggplot2)
+library(car)
+library(sp)
+library(RColorBrewer)
+library(tmap)
+library(tidyverse)
+library(broom)
+library(DescTools)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+CompositeLSOA <- read_sf(dsn = ".", layer = "CompositefulldataF")
+plot(CompositeLSOA)
+
+YPLL <- CompositeLSOA$Yrpotlife
+CompositeLSOA$YPLL <- YPLL
+summary (CompositeLSOA$Yrpotlife)
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
