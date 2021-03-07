@@ -59,6 +59,8 @@ compositeLSOA_nbq_w <- nb2listw(compositeLSOA_nbq, style="W") #Queen’s neighbo
 summary(compositeLSOA_nbq_w)
 
 
+
+
 ########################################################################################
 #---------------------Non-spatial models for all LSOA----------------------------------#
 
