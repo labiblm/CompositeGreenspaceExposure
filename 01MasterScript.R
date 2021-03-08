@@ -509,19 +509,6 @@ tm_shape(CompositeLSOA) +
             legend.position = c("left", "bottom"), legend.title.size = 0.8)
 
 
-
-
-#######################Air Pollution Sensitivity###########################
-
-pm10_mean_
-
-
-
-
-
-
-
-
 #######################testmediation################################################
 
 
